@@ -53,15 +53,16 @@ That will also allow users who reach StackExchange via web search engine to find
 Another potential way to apply our solution will be to suggest tags for new posts that only have few or none at all.
 Doing this will make it easier for experts to find the questions they might have the knowledge to answer.
 This will allow the askers to get faster responses, make navigation easier for experienced users, and, hopefully, increase the rate at which questions are being answered.
-As of now, this feature is not implemented on Stack Exchange.
+As of now, StackExchange platform suggests tags only if there are links presented in the question's description. A question with no links included doesn't receive possible tags list.
 
 \section{Milestones}
 To keep track of our work progress, we'd like to set following milestones:
 \begin{enumerate}
- \item Design a smart similarity measure that works well in the context of Stack Exchange posts.
- \item Implement an algorithm that outputs a list of similar posts for any query post.
- \item Apply the results from (2) to find duplicate posts.
- \item Implement the tag suggestion system for posts that have none or few.
+ \item Design a similarity measure that works well in the context of Stack Exchange posts.
+ \item Implement an algorithm that outputs a list of similar posts and corresponding similarity measure for any query post.
+ \item Design a metric to compare our results to current StackExchange ones.
+ \item Apply the developed algorithm to find duplicate posts on StackExchange forums of different sizes. Compare the results.
+ \item \textit{(optional)} Implement the tag suggestion system for posts that have none or few.
 \end{enumerate}
 
 \end{document}
