@@ -34,8 +34,8 @@ Kerstin Gottelt\\
 \maketitle
 
 \section{Data Set}
-The data set\cite{data-set} we are intending to work on contains information about user activity on Stack Exchange forums.\cite{stackexchange-about}
-Stack Exchange is a network of Q\&A boards on topics such as Software Engineering, Linux Administration and Mathematics.
+The data set\cite{data-set} we are intending to work on contains information about user activity on Stack Exchange forums.
+Stack Exchange\cite{stackexchange-about} is a network of Q\&A boards on topics such as Software Engineering, Linux Administration and Mathematics.
 The data set itself is divided into parts for each of the boards, each of the parts consisting of data about posts (a.k.a questions) tagged according to different topics, answers, user profiles, comments and votes.
 
 % \section{Finding Trends}
@@ -50,16 +50,23 @@ Our first idea is to develop an algorithm to find highly similar posts.
 One possible application for it will be to check new posts for uniqueness. 
 It happens often that inexperienced users ask questions that have already been answered.
 In this case pointing directly to the answer will save time for the user and will reduce the amount of redundant information on the forums. 
-Current realisation provides possible duplicates based only on the title of the question. Our approach is to take into account not only the title, but also question's body and tags. It will most definitely improve the quality of similar questions suggestions and prevent user from creating a duplicate.
+The current realisation lists possible duplicates based only on the title of the question. 
+Our approach will take into account not only the title, but also question's body and tags. 
+It will most likely improve the quality of analogous questions' detection and help users to avoid posting duplicates.
 
-Second possible application is to provide links to similar questions for existing ones that are not yet checked as answered. Sometimes the questions could not be resloved by other users due to a lack of detaills or bad question formulation. 
+Second possible application of our technique is to provide links to similar questions for existing ones that are not yet checked as answered. 
+Sometimes the questions could not be resloved by other users due to a lack of detaills or bad question formulation. 
 If there are other similar questions that already have a solution, pointing a link to them could help finding correct answer for original question. 
-That will also allow users who reach StackExchange via web search engine to find the solutions faster. 
+That will also allow the users who reach StackExchange via a search engine to find the solutions faster. 
 
 Another potential way to apply our solution will be to suggest tags for new posts that only have few or none at all.
-Doing this will make it easier for experts to find the questions they might have the knowledge to answer.
+For instance, on StackOverflow currently more than 5 out of 9 million posts have no tags assigned to them.
+Resolving this issue will make it easier for experts to find the questions they might have the knowledge to answer.
 This will allow the askers to get faster responses, make navigation easier for experienced users, and, hopefully, increase the rate at which questions are being answered.
-As of now, StackExchange platform suggests tags only if there are links presented in the question's description. A question with no links included doesn't receive possible tags list.
+As of now, the StackExchange platform suggests tags only if there are hyperlinks in the question's body.
+A question with no links included doesn't receive any tag recommendations at all.
+
+\newpage
 \section{Milestones}
 To keep track of our work progress, we'd like to set following milestones:
 \begin{enumerate}
