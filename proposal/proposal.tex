@@ -2,6 +2,11 @@
 
 \begin{document}
 
+% remove copyrightspace at the bottom of the first template page
+\makeatletter
+\def\@copyrightspace{\relax}
+\makeatother
+
 \title{Project Proposal: Analysing Stack Exchange Forums}
 %\subtitle{[Extended Abstract]}
 
@@ -21,7 +26,8 @@ Kerstin Gottelt\\
 \and  % use '\and' if you need 'another row' of author names
 % 4th. author
 \alignauthor Tizian Sarre\\
-       \email{tizian.sarre@gmx.de}}
+       \email{tizian.sarre@gmx.de}
+}       
 
 \date{\today}
 
@@ -54,7 +60,6 @@ Another potential way to apply our solution will be to suggest tags for new post
 Doing this will make it easier for experts to find the questions they might have the knowledge to answer.
 This will allow the askers to get faster responses, make navigation easier for experienced users, and, hopefully, increase the rate at which questions are being answered.
 As of now, StackExchange platform suggests tags only if there are links presented in the question's description. A question with no links included doesn't receive possible tags list.
-
 \section{Milestones}
 To keep track of our work progress, we'd like to set following milestones:
 \begin{enumerate}
